@@ -1,0 +1,22 @@
+<h1>else-if using Angular</h1>
+
+<button (click)="handleColor(1)">Red</button>
+<button (click)="handleColor(2)">Blue</button>
+<button (click)="handleColor(3)">Green</button>
+<button (click)="handleColor(10)">Other</button>
+
+<input
+  type="text"
+  (input)="handleInput($event)"
+  placeholder="Enter color Number"
+/>
+@if(color==1){
+<div style="width: 100px; height: 100px; background-color: red"></div>
+} @else if (color==2) {
+<div style="width: 100px; height: 100px; background-color: blue"></div>
+} @else if (color==3) {
+<div style="width: 100px; height: 100px; background-color: green"></div>
+} @else {
+<div style="width: 100px; height: 100px; background-color: black"></div>
+<div></div>
+}
