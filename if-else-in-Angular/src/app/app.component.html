@@ -1,0 +1,27 @@
+<h1>if Else | Control Flow</h1>
+
+@if (x==10) {
+<div style="width: 200px; height: 200px; background-color: green"></div>
+}
+<br />
+<br />
+<button (click)="hide()">Hive DIV</button>
+<button (click)="show()">Show DIV</button>
+<button (click)="toggle()">Toggle DIV</button>
+
+<br /><br />
+@if (display) {
+<div style="width: 200px; height: 200px; background-color: yellow"></div>
+}
+<br /><br /><br />
+
+<hr />
+
+<button (click)="toggleTwo()">
+  {{ togglediv ? "show yellow div" : "show red div" }}
+</button>
+@if(togglediv){
+<div style="background-color: red; height: 200px"></div>
+} @else {
+<div style="background-color: yellow; height: 200px"></div>
+}
