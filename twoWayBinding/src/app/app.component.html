@@ -1,0 +1,10 @@
+<h1>To Way Binding</h1>
+
+<!-- this is using ng model -->
+<input [(ngModel)]="name" type=" text" placeholder="Enter Name" />
+<h1>{{ name }}</h1>
+
+<hr />
+<!-- this is just regular method without using ngModel -->
+<input (input)="changeName($event)" type="text" placeholder="enter name" />
+<h1>{{ name1 }}</h1>

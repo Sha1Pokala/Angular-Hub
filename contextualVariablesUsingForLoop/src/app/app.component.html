@@ -1,0 +1,37 @@
+<h1>Contextual Variables Using for Loop</h1>
+
+@for(user of users; track user){
+<h3>{{ $index + 1 }} this is the index of the {{ user }}</h3>
+}
+
+<hr />
+<!-- if we declare any variable for the Index here using below in the for 
+loop we can use direclty i in place of the $index here.  -->
+@for(user of users; track user; let i=$index){
+<h3>{{ i + 1 }} this is the index of the {{ user }}</h3>
+}
+
+<hr />
+
+<!-- Now if we want to take first and last to be red color then we need to use below 
+ and using some of the variables for first and last in this-- -->
+@for(user of users; track user; let i=$index; let f=$first; let l=$last; ) { @if
+(f||l) {
+<h3 style="background-color: red">
+  {{ i + 1 }} this is the index of the {{ user }}
+</h3>
+} @else {
+<h3>{{ i + 1 }} this is the index of the {{ user }}</h3>
+} }
+
+<hr />
+<!-- Now Im displaying Even and Odd -->
+@for(user of users; track user; let i=$index){ @if ($even) {
+<h3 style="background-color: gray">
+  {{ i }} this is the index of the {{ user }}
+</h3>
+} @else {
+<h3 style="background-color: bisque">
+  {{ i }} this is the index of the {{ user }}
+</h3>
+} }
