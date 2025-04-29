@@ -1,5 +1,36 @@
 <h1>For Loop in Angular</h1>
 
 <h2>
-  {{ user[0] }}
+  {{ users[0] }}
 </h2>
+
+@for (user of users ; track user) {
+
+<h2>{{ user }}</h2>
+}
+
+<hr />
+
+@for (student of students; track student.fullName) {
+
+<span>
+  {{ student.fullName }}
+</span>
+<br />
+<span> {{ student.age }} </span><br />
+<span>
+  {{ student.email }}
+</span>
+
+<button (click)="getName(student.fullName)">GetName</button>
+
+} @for (student of students; track student.fullName; let id=$index) {
+
+<p>{{ id + 1 }}</p>
+
+<p>{{ student.age }}</p>
+
+<p>{{ student.email }}</p>
+
+<button (click)="getName(student.fullName)">GetName</button>
+}
