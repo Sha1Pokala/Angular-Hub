@@ -1,0 +1,31 @@
+<!-- This is Using ngIf this is using Component- that we have mentioned in the import[NgIf] in app.components.ts file-->
+<h1 *ngIf="show">Directives in Angular</h1>
+
+<!-- This is Using ngFor this is using Component- that we have mentioned in the import[NgFor] in app.components.ts file-->
+<ul>
+  <li *ngFor="let student of students">{{ student }}</li>
+  <!-- Use *ngFor (lowercase n) -->
+</ul>
+
+<hr />
+<hr />
+<!-- this is using array of objects  *ngFor -->
+<ul>
+  <li *ngFor="let student of studentData">
+    {{ student.Name }}, {{ student.age }}, {{ student.email }}
+  </li>
+</ul>
+
+<hr />
+<!-- using NgIf directives in Angular -->
+
+<h1 *ngIf="show1">ng if Directive</h1>
+
+<!-- Togglin Login and Logout using *ngIf -->
+<div *ngIf="login; else elseBlock">
+  <a href="">Logout</a>
+</div>
+
+<ng-template #elseBlock>
+  <a href="">Login</a>
+</ng-template>

@@ -1,0 +1,24 @@
+<H1 style="background-color: orange">
+  Dynamic Styling in Angular using basic Inline Style(css)
+</H1>
+
+<h1 [style.background-color]="bgcolor" [style.fontSize]="fontSize">
+  Dynamic Styling using Angular
+</h1>
+
+<!-- this is using .px(pixels) -->
+<h1 [style.background-color]="bgcolor1" [style.fontSize.px]="fontsize1">
+  Dynamic Styling using Angular
+</h1>
+
+<!-- this is using .pt(percentage) -->
+<h1 [style.background-color]="bgcolor2" [style.fontSize.pt]="fontsize2">
+  Dynamic Styling using Angular
+</h1>
+
+<!-- this is using conditional statements(basic) -look at the code in app.component.ts-->
+<h1 [style.fontSize]="zoom ? headingSizeBig : headingSizeSmall">Heading</h1>
+
+<!-- this is using the click function using a button -->
+<h1 [style.fontSize]="zoom1 ? headingSizeBig : headingSizeSmall">Heading</h1>
+<button (click)="updateHeadingSize()">Toggle Text</button>
