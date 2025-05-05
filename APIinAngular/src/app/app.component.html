@@ -1,0 +1,12 @@
+<h1>Using API in Angular</h1>
+
+@for(item of productList; track item.id){
+
+<ul>
+  <li><b>ID:</b>{{ item.id }} <img src="{{ item.thumbnail }}" alt="" /></li>
+  <li><b>title:</b>{{ item.title }}</li>
+  <li><b>price:</b>{{ item.price }}</li>
+  <li><b>rating:</b>{{ item.rating }}</li>
+  <li><b>category:</b>{{ item.category }}</li>
+</ul>
+}

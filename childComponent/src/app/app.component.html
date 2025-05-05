@@ -1,0 +1,11 @@
+<h1>Child Component</h1>
+<app-user user="Anil"> </app-user>
+
+<app-user [user]="userName"> </app-user>
+
+<select #selectedItem (change)="onUserChange(selectedItem.value)">
+  <option value="Anil SIdhu">Anil Sidhu</option>
+  <option value="Sam">Sam</option>
+  <option value="Peter">Peter</option>
+  <option value="Lauda">Lauda</option>
+</select>

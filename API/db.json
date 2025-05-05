@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "name": "Anil",
+      "email": "anil@test.co",
+      "age": 29,
+      "id": "5f6c"
+    },
+    {
+      "name": "Shashank",
+      "age": 30,
+      "email": "shashank@test.com",
+      "id": "86f6"
+    },
+    {
+      "name": "Rohan",
+      "age": 35,
+      "email": "rohan@test.com",
+      "id": "3f79"
+    },
+    {
+      "id": "de27",
+      "name": "likhita",
+      "email": "likhita@test.com",
+      "age": 27
+    },
+    {
+      "id": "c406",
+      "name": "test",
+      "email": "test@test.com",
+      "age": 25
+    },
+    {
+      "id": "24ea",
+      "name": "tony",
+      "email": "tony@test.com",
+      "age": 34
+    }
+  ]
+}

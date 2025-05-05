@@ -1,0 +1,10 @@
+<h1>Component Life Cycle Methods</h1>
+<h1>
+  {{ counter }}
+</h1>
+
+<button (click)="updateCounter()">Count{{ counter }}</button>
+
+<div *ngIf="counter != 5">
+  <app-user [counter]="counter" #user> </app-user>
+</div>

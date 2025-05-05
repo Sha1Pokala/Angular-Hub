@@ -1,0 +1,9 @@
+<h1>Service In Angular</h1>
+
+<button (click)="getProductData()">Load Product Services Data</button>
+
+@for(item of productData; track item) {
+<h1>
+  Item Name: {{ item.name }}, Brand: {{ item.brand }}, Cost : {{ item.cost }}
+</h1>
+}

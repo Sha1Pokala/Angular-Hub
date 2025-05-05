@@ -1,0 +1,33 @@
+<h1>Data using Customer API</h1>
+
+
+<form #userForm="ngForm" (ngSubmit)="addUser(userForm.value)">
+
+  <input type="text" placeholder="Enter Name" name= "name" [ngModel]="selectedUser?.name">
+  <br>
+  <br>
+  <input type="text" placeholder="Enter Email name" name="email" [ngModel]="selectedUser?.email">
+  <br>
+  <br>
+  <input type="number" placeholder="Enter age name" name="age" [ngModel]="selectedUser?.age">
+  <br><br>
+  @if(!selectedUser){
+    <button>
+      Add User
+    </button>
+  }@else{
+    <button>Update User</button>
+  }
+</form>
+
+@for(user of users;track user){
+  <ul>
+    <li>Name:{{ user.name }}</li>
+    <li>Age:{{ user.age }}</li>
+    <li>Id: {{ user.id }}</li>
+    <li>Email: {{ user.email }}</li>
+    <li><button (click)="deleteUser(user.id)">Delete</button></li>
+    <li><button (click)="selectUser(user.id)">Update User</button></li>
+  </ul>
+  }
+  

@@ -1,0 +1,13 @@
+h1{
+    border: 1px red solid;
+width: 50%;
+display: flex;
+justify-content: space-between;
+
+}
+
+h1 span{
+    background-color: red;
+    display: inline-block;
+    padding: 5px;
+}

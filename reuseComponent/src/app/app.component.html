@@ -1,0 +1,8 @@
+<h1>Reusing Component</h1>
+
+@for(user of users; track user){
+<div>
+  {{ user }}
+  <app-user [user]="user"> </app-user>
+</div>
+}
